@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6200EE"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/tip_time"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/cost_of_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#A9A9A9"
+        android:hint="@string/cost_of_service"
+        android:inputType="numberDecimal"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/how_was_the_service"
+        android:textColor="#B1A4A4"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/tip_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/option_twenty_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#D54141"
+            android:checked="true"
+            android:text="@string/option_twenty_percent"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/option_eighteen_percent"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:text="@string/option_eighteen_percent"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/option_fifteen_percent"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:text="@string/option_fifteen_percent"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/round_up_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/round_up_tip"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn"
+        android:text="@string/calculate"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tip_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/tip_amount"
+        android:textColor="#A9A9A9"
+        android:layout_gravity="end"
+        android:textSize="18sp" />
+
+</LinearLayout>
